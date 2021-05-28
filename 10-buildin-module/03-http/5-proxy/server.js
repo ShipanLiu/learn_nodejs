@@ -22,7 +22,7 @@ const server = http.createServer((req, res) => {
   // 下面的api是你自己设置瞎几把的暗号， 并不存在再原url里面
   if(/\/api/.test(urlStr)) {
     const proxy = createProxyMiddleware('/api', {
-      target: 'https://www.ebay.de',
+      target: 'https://www.baidu.com',
       changeOrigin: true,
       // 请求的时候带暗号，所以要去掉
       pathRewrite: {

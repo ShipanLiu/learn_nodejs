@@ -21,7 +21,7 @@ logger.level = 'debug'
 const url = require('url')
 const urlString = 'http://www.baidu.com:443/path/index.html?id-2#tag=3'
 
-// logger.debug(url.parse(urlString))
+logger.debug(url.parse(urlString))
 
 
 const urlObj = {
